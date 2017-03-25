@@ -8,7 +8,7 @@ end
 # initialize chrome browser driver
 $browser = Watir::Browser.new :chrome
 
-def great_artists_steal(lesson_name, class_id, lesson_filename)
+def great_artists_pair(lesson_name, class_id, lesson_filename)
   $lesson_name = lesson_name
   $class_id = class_id
   $lesson_filename = lesson_filename
@@ -64,9 +64,10 @@ def great_artists_steal(lesson_name, class_id, lesson_filename)
     # puts all the students who haven't completed X lab
     def lonely_students_need_partners
       @lonely_students.each_with_index do |student, i|
-        puts "                               "
-        puts "#{i+1}. #{student} still hasn't"
-        puts "completed #{$lesson_name}."
+        if i >= 1 
+          puts "#{i}. #{student} needs a partner"
+          puts " "
+        end
       end
     end
     lonely_students_need_partners 
@@ -198,13 +199,13 @@ def golden_arrow_cli # command line interface and menus
     puts " "
     puts " "
     sleep(1)
-    puts "               LESSON TITLE     "
-    puts "          #{lesson_name.upcase}"
+    puts "                LESSON TITLE"
+    puts "           #{lesson_name}"
     puts " "
     
     # RUN THE PROGRAM
 
-    great_artists_steal(lesson_name, class_id, lesson_filename)
+    great_artists_pair(lesson_name, class_id, lesson_filename)
     
     puts " "
     puts "...THE GOLDEN ARROW - MATCH LISTING COMPLETE..."
