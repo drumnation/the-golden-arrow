@@ -95,7 +95,9 @@ def golden_arrow_cli # command line interface and menus
     | lab so you can ask them to pair with you.|
      ------------------------------------------
     HEREDOC
-    # how retarded is how I had to fix the arrow?
+    # Look how silly the fix for that arrow is...
+    # Had to escape all the backslashes in the design
+    
     puts welcome 
     sleep(3)
     puts `clear`
