@@ -113,7 +113,7 @@ def golden_arrow_cli # command line interface and menus
     |                                           |
     |  1. Magical Bears Eating Pears |   11-16  |  
     |  2. Cuddly Pair Bears          |   02-17  |  
-    |  3. Eyes on the Man-Bear-Pig   | 03-13-17 |
+    |  3. Eyes on the Man-Pair-Pig   | 03-13-17 |
     |                                           |
     ---------------------------------------------
     |             Press Q to Quit               |
@@ -145,7 +145,7 @@ def golden_arrow_cli # command line interface and menus
       |                                           |
       |  1. Magical Bears Eating Pears |   11-16  |  
       |  2. Cuddly Pair Bears          |   02-17  |  
-      |  3. Eyes on the Man-Bear-Pig   | 03-13-17 |
+      |  3. Eyes on the Man-Pair-Pig   | 03-13-17 |
       |                                           |
       ---------------------------------------------
       |             Press Q to Quit               |
@@ -205,7 +205,7 @@ def golden_arrow_cli # command line interface and menus
     great_artists_steal(lesson_name, class_id, lesson_filename)
     
     puts " "
-    puts "....THE GOLDEN ARROW - MATCH LISTING COMPLETE...."
+    puts "...THE GOLDEN ARROW - MATCH LISTING COMPLETE..."
     puts " "
   end
   greetings
